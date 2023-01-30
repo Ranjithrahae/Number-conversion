@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>converter</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <header>Number Conversion</header>
+    <div class="container">
+      <div class="unitnav">
+        <div class="from">
+          <select name="from" class="fromCol">
+            <option value="from">FROM</option>
+            <option value="hexaDecimal">hexaDecimal</option>
+            <option value="bin">Binary</option>
+            <option value="decimal">decimal</option>
+            <option value="octadecimal">octadecimal</option>
+          </select>
+        </div>
+
+        <div class="to">
+          <select name="to" class="toCol">
+            <option value="to">To</option>
+            <option value="hexaDecimal">hexaDecimal</option>
+            <option value="bin">Binary</option>
+            <option value="decimal">decimal</option>
+            <option alue="octadecimal">octadecimal</option>
+          </select>
+        </div>
+      </div>
+      <div class="inout">
+        <label>Input</label>
+        <input class="inputarea" />
+        <label>Output</label>
+        <textarea readonly class="outputtext"></textarea>
+      </div>
+      <div><button class="btn-convert">convert</button></div>
+    </div>
+    <script src="converter.js"></script>
+  </body>
+</html>
